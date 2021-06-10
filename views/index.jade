@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  form.form-signin
+    label.sr-only(for='inputEmail') Email address
+    input#inputEmailLogin.form-control(type='email' placeholder='Email address' required='' autofocus='').mt-2
+    label.sr-only(for='inputPassword') Password
+    input#inputPasswordLogin.form-control(type='password' placeholder='Password' required='').mt-2
+    button.btn.btn-lg.btn-primary.btn-block(type='submit' onclick='onSubmitSignIn()').mt-2 Sign in
+  p#statusLogin
